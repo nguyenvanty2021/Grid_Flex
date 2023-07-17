@@ -36,6 +36,14 @@ function App() {
         <div className="item-4v2 itemvv2">comment</div>
         <div className="item-5v2 itemvv2">footer</div>
       </div>
+      <div className="containerv3" style={{ marginTop: "100px" }}>
+        <div className="item-1v3 itemvv2">header</div>
+        <div className="item-2v3 itemvv2">sidebar</div>
+        <div className="item-3v3 itemvv2">content</div>
+        <div className="item-4v3 itemvv2">comment</div>
+        <div className="item-5v3 itemvv2">footer</div>
+        <div className="item-6v3 itemvv2">spread</div>
+      </div>
       <div className="grid1">
         <div className="grid1_container">
           <img
