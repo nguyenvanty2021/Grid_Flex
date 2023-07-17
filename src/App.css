@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* margin: 10px -20px; */
+}
+.card {
+  border-radius: 20px;
+  background-color: red;
+  /* width: 25%; */
+  width: 350px;
+  /* width: calc(350px - 30px); */
+  /* margin-left: 30px; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.cards_v2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* margin: 10px -20px; */
+}
+.card_v2 {
+  border-radius: 20px;
+  background-color: red;
+  /* width: 25%; */
+  /* width: 350px; */
+  width: calc(350px - 30px);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+card_v2:not(:first-child) {
+  margin-left: 30px;
+}
+.parent {
+  padding: 10px;
+}
+.item span {
+  background-color: yellow;
+  flex: 1;
+}
+.item:last-child {
+  background-color: green;
+}
+.itemv {
+  background-color: gold;
+  border: 1px solid grey;
+  min-height: 50px;
+}
+.container {
+  display: grid;
+  /* element 1 = 300px, 2 = 100px này là độ dài tuyệt đối */
+  /* grid-template-columns: 300px 100px; này là độ dài tuyệt đối */
+  /* element 1 = 300px, 2 = 100px, 3 = 200px này là độ dài tuyệt đối */
+  /* grid-template-columns: 300px 100px 200px; */
+  /* mình sẽ dùng độ dài tương đối, fr = fraction -> 1fr 1fr 1fr = repeat(3, 1fr) */
+  grid-template-columns: repeat(3, 1fr);
+  /* tương tự columns thì giờ là row */
+  /* grid-template-row: 100px 300px 200px; */
+  /* hoặc dùng cách này, nhưng cách này là hardcode */
+  /* grid-auto-rows: 10px; */
+  /* nên dùng cách này flex */
+  grid-auto-rows: minmax(50px, auto);
+}
+.item-5 {
+  /* grid-column-start: 2;
+  grid-column-end: 4; */
+  /* = với lệnh */
+  grid-column: 2/4;
+  grid-row: 2/4;
+}
+.item-4 {
+  grid-row: 2/5;
 }
 
-.App-link {
-  color: #61dafb;
+.containerv2 {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-rows: 100px 1fr 1fr 100px;
+  height: 100vh;
+  grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "sidebar comment comment"
+    "footer footer footer";
+  column-gap: 10px;
+  row-gap: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item-1v2 {
+  grid-area: header;
+  height: 100%;
+  width: 100%;
+  background-color: pink !important;
+}
+.item-2v2 {
+  grid-area: sidebar;
+  height: 100%;
+  width: 100%;
+  background-color: orange !important;
+}
+.item-3v2 {
+  height: 100%;
+  width: 100%;
+  background-color: red !important;
+  grid-area: content;
+}
+.item-5v2 {
+  grid-area: footer;
+  height: 100%;
+  width: 100%;
+  background-color: blue !important;
+}
+.item-4v2 {
+  grid-area: comment;
+  height: 100%;
+  width: 100%;
+  background-color: yellow !important;
 }
