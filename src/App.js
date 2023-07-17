@@ -70,24 +70,63 @@ function App() {
           />
         </div>
       </div>
-      {/* <div className="grid2">
-        <img
-          src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
-          alt=""
-        />
-        <img
-          src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
-          alt=""
-        />
-        <img
-          src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
-          alt=""
-        />
-        <img
-          src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
-          alt=""
-        />
-      </div> */}
+      <div className="parent_test">
+        <div className="item_test">
+          <img
+            className="item_test_image"
+            src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+            alt=""
+          />
+          <div className="item_test_content">
+            <p>
+              adadsadasdas dasd dasjdhsajhqwjeqw dasjd agasd ahsgdja sdqwe dsa
+              hdajks dhksjdhjksdqweqweq eqw eqwh qjwkehqjk qhwejksdas das ds
+              qweq
+            </p>
+            <b>qweqjwklwjeqkwj hjkadhjask</b>
+          </div>
+        </div>
+        <div className="item_test">
+          <img
+            className="item_test_image"
+            src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+            alt=""
+          />
+          <div className="item_test_content">
+            <p>
+              adadsadasdas dasd dasjdhsajhqwjeqw dasjd agasd ahsgdja sdqwe dsa
+              hdajks dhksjdhjksdqweqweq eqw eqwh qjwkehqjk qhwejksdas dasdasd
+              adasdasd adas dasda das dasdasd eqweq weqwe qeqwww
+            </p>
+            <b>qweqjwklwjeqkwj hjkadhjask</b>
+          </div>
+        </div>
+        <div className="item_test">
+          <img
+            className="item_test_image"
+            src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+            alt=""
+          />
+          <div className="item_test_content">
+            <p>adadsadasdas dasd dasjdhsajhqwjeqw dasjd agasd</p>
+            <b>qweqjwklwjeqkwj hjkadhjask</b>
+          </div>
+        </div>
+        <div className="item_test">
+          <img
+            className="item_test_image"
+            src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+            alt=""
+          />
+          <div className="item_test_content">
+            <p>
+              adadsadasdas dasd dasjdhsajhqwjeqw dasjd agasd ahsgdja sdqwe dsa
+              hdajks dhksjdhjksdqweqweq eqw eqwh qjwkehqjk qhwejksdas
+            </p>
+            <b>qweqjwklwjeqkwj hjkadhjask</b>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
