@@ -36,6 +36,50 @@ function App() {
         <div className="item-4v2 itemvv2">comment</div>
         <div className="item-5v2 itemvv2">footer</div>
       </div>
+      <div className="grid1">
+        <div className="grid1_container">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+            alt=""
+          />
+        </div>
+        <div className="grid1_container">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+            alt=""
+          />
+        </div>
+        <div className="grid1_container">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+            alt=""
+          />
+        </div>
+        <div className="grid1_container">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+            alt=""
+          />
+        </div>
+      </div>
+      {/* <div className="grid2">
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+          alt=""
+        />
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+          alt=""
+        />
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+          alt=""
+        />
+        <img
+          src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+          alt=""
+        />
+      </div> */}
     </>
   );
 }
