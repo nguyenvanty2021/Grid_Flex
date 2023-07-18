@@ -127,6 +127,51 @@ function App() {
           </div>
         </div>
       </div>
+      <div className="button">
+        <input />
+        <button>btn</button>
+      </div>
+      <>
+        <div className="form">
+          <label>Name: </label>
+          <input />
+        </div>
+        <div className="form">
+          <label>Password: </label>
+          <input />
+        </div>
+      </>
+      <div className="center">
+        <div className="center1 center__child">
+          <h1>H1</h1>
+          <p>Content1</p>
+        </div>
+        <div className="center2 center__child">
+          <h1>H2</h1>
+          <p>Content2</p>
+        </div>
+        <div className="center3 center__child">
+          <h1>H3</h1>
+          <p>Content3</p>
+        </div>
+      </div>
+      <div className="test2">
+        <p>
+          dshdkjashkdjashjda hdahdjkasd askjdha jksdhajks dhjaks hdjkash djkash
+          dajksj
+        </p>
+        <p>
+          dshdkjashkdjashjda hdahdjkasd askjdha jksdhajks dhjaks hdjkash djkash
+          dajksj
+        </p>
+        <p>
+          dshdkjashkdjashjda hdahdjkasd askjdha jksdhajks dhjaks hdjkash djkash
+          dajksj
+        </p>
+      </div>
+      <div className="centerv2">
+        <p>center</p>
+      </div>
     </>
   );
 }
