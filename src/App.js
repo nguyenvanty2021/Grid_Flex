@@ -3,6 +3,16 @@ function App() {
   return (
     <>
       <div className="parent">
+        <div className="flex_grow">
+          <div>123</div>
+          <div>456</div>
+          <div>789</div>
+        </div>
+        <div className="flex_grow flex_grow_v2">
+          <div>123</div>
+          <div>456</div>
+          <div>789</div>
+        </div>
         <div className="cards">
           <div className="card">123</div>
           <div className="card">456</div>

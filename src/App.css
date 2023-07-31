@@ -1,3 +1,26 @@
+.flex_grow {
+  display: flex;
+  /* flex box cũng có gap */
+  gap: 10px;
+}
+.flex_grow > div {
+  background-color: red;
+  border: 2px solid blue;
+  /* nếu không có flex-grow thì mỗi child là 200px thôi, còn nếu dùng flex-grow thì mỗi child sẽ tối thiểu là 200px (nếu ở thiết bị nhỏ) và mặc định
+  nếu còn width thì nó sẽ tự động tăng width mỗi child lên để cho các child lắp đầy toàn màn hình (full width) và vì dùng flex-shrink: 0 nên sẽ xuất hiện scroll ngang
+  -> nhưng phải dùng flex-basis thay cho width */
+  flex-grow: 1;
+  flex-shrink: 0;
+  /* nếu dùng flex-box nếu dùng flex-basis thay cho dùng width để dễ xử lý hơn */
+  flex-basis: 200px;
+}
+.flex_grow_v2 {
+  margin-top: 1rem;
+}
+.flex_grow_v2 > div {
+  /* cho phép co dãn width theo màn hình. VD: child 200px thì nếu ở device nhỏ sẽ tự động co dãn dưới 200px luôn chứ không cố đỉnh luôn luôn là 200px */
+  flex-shrink: 1 !important;
+}
 .cards {
   display: flex;
   justify-content: space-between;
@@ -8,7 +31,7 @@
   border-radius: 20px;
   background-color: red;
   /* width: 25%; */
-  width: 350px;
+  width: 320px;
   /* width: calc(350px - 30px); */
   /* margin-left: 30px; */
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
