@@ -17,12 +17,23 @@ function App() {
               alt=""
             />
             <div className="content">
-              <h3>
-                qeqweqwe q eqeqwe qwe qwklejqwkleqjw eqwklejqweqkw eqweqwewe
-                eqwlkejqlejkw jeklqwkklj eqweqweqwjkl dasddsjkl eqwe jlkdasd
-                eqwkljkl dasqwewjk dasdaskl eqewlk dads jklj qeqwlk dasd d
-                jkljklkl eqw
-              </h3>
+              <div className="content_top">
+                <h3>
+                  qeqweqwe q eqeqwe qwe qwklejqwkleqjw eqwklejqweqkw eqweqwewe
+                  qeqweqwe q eqeqwe qwe qwklejqwkleqjw eqwklejqweqkw eqweqwewe
+                </h3>
+                <div className="content_top_img">
+                  <img
+                    className="content_image"
+                    src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+                    alt=""
+                  />
+                  <div>
+                    <p>123</p>
+                    <p>456</p>
+                  </div>
+                </div>
+              </div>
               <div className="special">
                 <div>
                   <img
@@ -41,10 +52,22 @@ function App() {
               alt=""
             />
             <div className="content">
-              <h3>
-                qeqweqwe q eqeqwe qwe qwklejqwkleqjw eqwklejqweqkw eqweqwewe
-                eqwlkejqlejkw
-              </h3>
+              <div className="content_top">
+                <h3>
+                  qeqweqwe q eqeqwe qwe qwklejqwkleqjw eqwklejqweqkw eqweqwewe
+                </h3>
+                <div className="content_top_img">
+                  <img
+                    className="content_image"
+                    src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+                    alt=""
+                  />
+                  <div>
+                    <p>123</p>
+                    <p>456</p>
+                  </div>
+                </div>
+              </div>
               <div className="special">
                 <div>
                   <img
@@ -63,10 +86,24 @@ function App() {
               alt=""
             />
             <div className="content">
-              <h3>
-                qeqweqwe q eqeqwe qwe qwklejqwkleqjw eqwklejqweqkw eqweqwewe
-                eqwlkejqlejkw dasdsdas dasdsds eqwewew dasdsds
-              </h3>
+              <div className="content_top">
+                <h3>
+                  qeqweqwe q eqeqwe qwe qwklejqwkleqjw eqwklejqweqkw eqweqwewe
+                  qeqweqwe q eqeqwe qwe qwklejqwkleqjw eqwklejqweqkw eqweqwewe
+                  qeqweqwe q eqeqwe qwe qwklejqwkleqjw eqwklejqweqkw eqweqwewe
+                </h3>
+                <div className="content_top_img">
+                  <img
+                    className="content_image"
+                    src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+                    alt=""
+                  />
+                  <div>
+                    <p>123</p>
+                    <p>456</p>
+                  </div>
+                </div>
+              </div>
               <div className="special">
                 <div>
                   <img
