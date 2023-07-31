@@ -10,9 +10,74 @@ function App() {
           <div className="card">1122</div>
         </div>
         <div className="cards_v2">
-          <div className="card_v2">123</div>
-          <div className="card_v2">456</div>
-          <div className="card_v2">789</div>
+          <div className="card_v2">
+            <img
+              className="content_image"
+              src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+              alt=""
+            />
+            <div className="content">
+              <h3>
+                qeqweqwe q eqeqwe qwe qwklejqwkleqjw eqwklejqweqkw eqweqwewe
+                eqwlkejqlejkw jeklqwkklj eqweqweqwjkl dasddsjkl eqwe jlkdasd
+                eqwkljkl dasqwewjk dasdaskl eqewlk dads jklj qeqwlk dasd d
+                jkljklkl eqw
+              </h3>
+              <div className="special">
+                <div>
+                  <img
+                    src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+                    alt=""
+                  />
+                </div>
+                <p>123</p>
+              </div>
+            </div>
+          </div>
+          <div className="card_v2">
+            <img
+              className="content_image"
+              src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+              alt=""
+            />
+            <div className="content">
+              <h3>
+                qeqweqwe q eqeqwe qwe qwklejqwkleqjw eqwklejqweqkw eqweqwewe
+                eqwlkejqlejkw
+              </h3>
+              <div className="special">
+                <div>
+                  <img
+                    src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+                    alt=""
+                  />
+                </div>
+                <p>123</p>
+              </div>
+            </div>
+          </div>
+          <div className="card_v2">
+            <img
+              className="content_image"
+              src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+              alt=""
+            />
+            <div className="content">
+              <h3>
+                qeqweqwe q eqeqwe qwe qwklejqwkleqjw eqwklejqweqkw eqweqwewe
+                eqwlkejqlejkw dasdsdas dasdsds eqwewew dasdsds
+              </h3>
+              <div className="special">
+                <div>
+                  <img
+                    src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+                    alt=""
+                  />
+                </div>
+                <p>123</p>
+              </div>
+            </div>
+          </div>
           <div className="card_v2 item">
             <span>1</span>
             <span>3</span>
