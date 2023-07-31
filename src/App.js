@@ -19,8 +19,9 @@ function App() {
             <div className="content">
               <div className="content_top">
                 <h3>
-                  qeqweqwe q eqeqwe qwe qwklejqwkleqjw eqwklejqweqkw eqweqwewe
-                  qeqweqwe q eqeqwe qwe qwklejqwkleqjw eqwklejqweqkw eqweqwewe
+                  qeqweqwe q eqeqwe qwe qwklejqwkleqjw eqwklejqweqkw
+                  eqweqwewedsadsaasdasdasasdasdsa qeqweqwe q eqeqwe qwe
+                  qwklejqwkleqjw eqwklejqweqkw eqweqwewe
                 </h3>
                 <div className="content_top_img">
                   <img
@@ -53,9 +54,7 @@ function App() {
             />
             <div className="content">
               <div className="content_top">
-                <h3>
-                  qeqweqwe q eqeqwe qwe qwklejqwkleqjw eqwklejqweqkw eqweqwewe
-                </h3>
+                <h3>qeqweqwe q eqeqwe qwe qwklejqwkleqjw</h3>
                 <div className="content_top_img">
                   <img
                     className="content_image"

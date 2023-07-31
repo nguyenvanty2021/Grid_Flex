@@ -22,6 +22,7 @@
 .card_v2 {
   display: flex;
   margin-top: 1rem;
+  overflow: hidden;
   flex-direction: column;
   border-radius: 20px;
   /* background-color: red; */
@@ -42,6 +43,13 @@
   flex-direction: column;
 }
 .content_top h3 {
+  /* word-break: break-all; */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
   /* margin-bottom: 1rem; */
 }
 .content {
