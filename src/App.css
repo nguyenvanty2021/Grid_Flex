@@ -328,38 +328,36 @@
   display: flex;
   margin: 1rem 0;
 }
-input {
+.button input {
   /* dãn chiếm hết tất cả khoảng trắng nếu có thể */
   flex-grow: 1;
   /* shrink = 0 thì input nó luôn cố định width = 1000px không co dãn theo device, = 1 sẽ co dãn theo device -> ưu tiên dùng 1 */
   flex-shrink: 1;
   width: 1000px;
 }
-.item span {
-  background-color: yellow;
-  flex: 1;
+.button button {
+  flex-shrink: 0;
 }
-.item:last-child {
-  background-color: green;
-}
-.parent {
-  padding: 10px;
-}
+
+/* Example 11 */
 .form {
   margin-bottom: 1rem;
   display: flex;
 }
 .form label {
+  flex-shrink: 0;
   min-width: 90px;
 }
 .form input {
   flex: 1;
 }
+
+/* Example 12 */
 .center {
   display: flex;
+  justify-content: space-between;
   width: 100%;
   background-color: red;
-  justify-content: space-between;
 }
 .center1 {
   flex: 1;
@@ -374,10 +372,12 @@ input {
 .center__child {
   text-align: center;
 }
+
+/* Example 13 */
 .test2 {
   display: flex;
-  margin: 30px 0;
   justify-content: space-evenly;
+  margin: 30px 0;
 }
 .test2 p {
   border: 1px solid blue;
@@ -385,13 +385,28 @@ input {
   flex-basis: 30%;
   background-color: red;
 }
+
+/* Example 14 */
 /* cho ra giữa */
 .centerv2 {
   background-color: red;
   height: 400px;
+  /* phải dùng display: flex ở cha thỉ thằng con mới dùng margin: auto được */
   display: flex;
 }
 /* cho ra giữa */
 .centerv2 p {
   margin: auto;
+}
+
+/* // còn lại */
+.item span {
+  background-color: yellow;
+  flex: 1;
+}
+.item:last-child {
+  background-color: green;
+}
+.parent {
+  padding: 10px;
 }

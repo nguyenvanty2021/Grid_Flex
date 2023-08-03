@@ -289,6 +289,8 @@ function App() {
         <input />
         <button>btn</button>
       </div>
+
+      {/* Example 11 */}
       <>
         <div className="form">
           <label>Name: </label>
@@ -299,6 +301,8 @@ function App() {
           <input />
         </div>
       </>
+
+      {/* Example 12 */}
       <div className="center">
         <div className="center1 center__child">
           <h1>H1</h1>
@@ -313,6 +317,8 @@ function App() {
           <p>Content3</p>
         </div>
       </div>
+
+      {/* Example 13 */}
       <div className="test2">
         <p>
           dshdkjashkdjashjda hdahdjkasd askjdha jksdhajks dhjaks hdjkash djkash
@@ -327,6 +333,8 @@ function App() {
           dajksj
         </p>
       </div>
+
+      {/* Example 14 */}
       <div className="centerv2">
         <p>center</p>
       </div>
