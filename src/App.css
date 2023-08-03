@@ -1,6 +1,7 @@
+/* Example 1 */
 .flex_grow {
   display: flex;
-  /* flex box cũng có gap */
+  /* flex-box cũng có gap */
   gap: 10px;
 }
 .flex_grow > div {
@@ -8,49 +9,47 @@
   border: 2px solid blue;
   /* nếu không có flex-grow thì mỗi child là 200px thôi, còn nếu dùng flex-grow thì mỗi child sẽ tối thiểu là 200px (nếu ở thiết bị nhỏ) và mặc định
   nếu còn width thì nó sẽ tự động tăng width mỗi child lên để cho các child lắp đầy toàn màn hình (full width) và vì dùng flex-shrink: 0 nên sẽ xuất hiện scroll ngang
-  -> nhưng phải dùng flex-basis thay cho width */
+  -> nhưng phải dùng flex-basis thay cho width
+  -> tối thiểu là 200px và không co lại theo device và xuất hiện scroll ngang */
   flex-grow: 1;
   flex-shrink: 0;
   /* nếu dùng flex-box nếu dùng flex-basis thay cho dùng width để dễ xử lý hơn */
   flex-basis: 200px;
 }
+
+/* Example 2 */
 .flex_grow_v2 {
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 .flex_grow_v2 > div {
   /* cho phép co dãn width theo màn hình. VD: child 200px thì nếu ở device nhỏ sẽ tự động co dãn dưới 200px luôn chứ không cố đỉnh luôn luôn là 200px */
   flex-shrink: 1 !important;
 }
+
+/* Example 3 */
 .cards {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /* margin: 10px -20px; */
 }
 .card {
   border-radius: 20px;
   background-color: red;
-  /* width: 25%; */
   width: 320px;
-  /* width: calc(350px - 30px); */
-  /* margin-left: 30px; */
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+/* Example 4 */
 .cards_v2 {
   display: flex;
-  /* justify-content: space-between; */
   flex-wrap: wrap;
-  /* margin: 10px -20px; */
 }
 .card_v2 {
   display: flex;
+  flex-direction: column;
   margin-top: 1rem;
   overflow: hidden;
-  flex-direction: column;
   border-radius: 20px;
-  /* background-color: red; */
-  /* width: 25%; */
-  /* width: 350px; */
   margin-left: 30px;
   width: calc(350px - 30px);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -59,27 +58,29 @@
   height: 200px;
   flex-shrink: 0;
 }
-.content_top {
-  display: flex;
-  flex: 1;
-  padding: 1rem;
-  flex-direction: column;
-}
-.content_top h3 {
-  /* word-break: break-all; */
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-word;
-  /* margin-bottom: 1rem; */
-}
 .content {
   background-color: red;
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+.content_top {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1rem;
+}
+.content_top h3 {
+  /* word-break: break-all; */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+.special p {
+  margin-left: 0.5rem;
 }
 .content_top_img {
   padding: 1rem 0 0 0 !important;
@@ -102,9 +103,6 @@
   flex: 1;
   margin-left: 0.5rem;
 }
-.special p {
-  margin-left: 0.5rem;
-}
 .card_v2 div img {
   width: 40px;
   height: 40px;
@@ -116,38 +114,34 @@
   flex: 1;
   background-color: blue;
 }
-/* card_v2:not(:first-child) {
-  margin-left: 30px;
-} */
-.parent {
-  padding: 10px;
-}
-.item span {
-  background-color: yellow;
-  flex: 1;
-}
-.item:last-child {
-  background-color: green;
+
+/* Example 5 */
+.container {
+  display: grid;
+  /* element 1 = 300px, 2 = 100px này là độ dài tuyệt đối */
+  /* grid-template-columns: 300px 100px; này là độ dài tuyệt đối, cột 1 = 300px, cột 2 = 100px, cột 3 full width */
+
+  /* element 1 = 300px, 2 = 100px, 3 = 200px này là độ dài tuyệt đối */
+  /* grid-template-columns: 300px 100px 200px; */
+
+  /* mình sẽ dùng độ dài tương đối, fr = fraction -> 1fr 1fr 1fr = repeat(3, 1fr) -> 3 cột = nhau */
+  grid-template-columns: repeat(3, 1fr);
+
+  /* tương tự columns thì giờ là row */
+  /* grid-template-row: 200px 500px; */
+  /* hoặc dùng cách này, nhưng cách này là hardcode */
+  /* grid-auto-rows: 10px; */
+
+  /* nên dùng cách này flex */
+  grid-auto-rows: minmax(50px, auto);
 }
 .itemv {
   background-color: gold;
   border: 1px solid grey;
   min-height: 50px;
 }
-.container {
-  display: grid;
-  /* element 1 = 300px, 2 = 100px này là độ dài tuyệt đối */
-  /* grid-template-columns: 300px 100px; này là độ dài tuyệt đối */
-  /* element 1 = 300px, 2 = 100px, 3 = 200px này là độ dài tuyệt đối */
-  /* grid-template-columns: 300px 100px 200px; */
-  /* mình sẽ dùng độ dài tương đối, fr = fraction -> 1fr 1fr 1fr = repeat(3, 1fr) */
-  grid-template-columns: repeat(3, 1fr);
-  /* tương tự columns thì giờ là row */
-  /* grid-template-row: 100px 300px 200px; */
-  /* hoặc dùng cách này, nhưng cách này là hardcode */
-  /* grid-auto-rows: 10px; */
-  /* nên dùng cách này flex */
-  grid-auto-rows: minmax(50px, auto);
+.item-4 {
+  grid-row: 2/5;
 }
 .item-5 {
   /* grid-column-start: 2;
@@ -156,10 +150,8 @@
   grid-column: 2/4;
   grid-row: 2/4;
 }
-.item-4 {
-  grid-row: 2/5;
-}
 
+/* Example 6 */
 .containerv2 {
   display: grid;
   /* grid-template-columns: repeat(3, 1fr); */
@@ -170,23 +162,6 @@
     "sidebar content content"
     "sidebar comment comment"
     "footer footer footer";
-  column-gap: 10px;
-  row-gap: 10px;
-}
-.containerv3 {
-  display: grid;
-  /* grid-template-columns: repeat(3, 1fr); */
-  /* dòng 1 = 300px, dòng 2 = 300px, dòng 3 = 1fr */
-  grid-template-rows: 300px 1fr 300px;
-  height: 100vh;
-  grid-template-areas:
-    /* "header header header"
-    "sidebar content content"
-    "sidebar comment comment"
-    "footer footer footer"; */
-    "a a b c"
-    "d e b c"
-    "d e f f";
   column-gap: 10px;
   row-gap: 10px;
 }
@@ -208,51 +183,35 @@
   background-color: red !important;
   grid-area: content;
 }
-.item-5v2 {
-  grid-area: footer;
-  height: 100%;
-  width: 100%;
-  background-color: blue !important;
-}
 .item-4v2 {
   grid-area: comment;
   height: 100%;
   width: 100%;
   background-color: yellow !important;
 }
-.grid1 {
-  /* padding: 150px; */
-  display: grid;
-  grid-gap: 30px;
-  /* mỗi img min 200px, max 1fr, auto-fill là mỗi element min 200px VD: full màn hình sẽ hiện được 6 element, mà mình chỉ có 4 element
-  thì khoảng trống 2 element còn lại là trống, còn nếu mình dùng auto-fit thì vì min là 200px thì nghĩa là từ 200px trở lên nên nó sẽ
-  dãn kích thước element ra hay nói cách khác là tăng width element lên sao cho 4 element hiển thị đủ full width luôn -> ưu tiên dùng auto-fit
-  design width bao nhiêu thì thay thế width đó cho vị trí 200px
-  */
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-.grid1 img {
-  object-fit: contain;
-  /* width: 150px; */
-  width: 100%;
+.item-5v2 {
+  grid-area: footer;
   height: 100%;
+  width: 100%;
+  background-color: blue !important;
 }
 
-@media screen and (max-width: 1023px) {
-  .grid1 {
-    grid-template-columns: unset;
-    grid-auto-flow: column;
-    grid-auto-columns: 80%;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-snap-stop: always;
-    padding: 25px;
-    scroll-padding: 25px;
-  }
-  .grid1_container {
-    /* start or end or center */
-    scroll-snap-align: start;
-  }
+/* Example 7 */
+.containerv3 {
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+
+  /* dòng 1 = 300px, dòng 2 = 300px, dòng 3 = 1fr
+  hoặc grid-template-rows: 1fr 50px 1fr;
+  */
+  grid-template-rows: 300px 1fr 300px;
+  height: 100vh;
+  grid-template-areas:
+    "a a b c"
+    "d e b c"
+    "d e f f";
+  column-gap: 10px;
+  row-gap: 10px;
 }
 .item-1v3 {
   grid-area: a;
@@ -272,6 +231,12 @@
   background-color: red !important;
   grid-area: c;
 }
+.item-4v3 {
+  grid-area: d;
+  height: 100%;
+  width: 100%;
+  background-color: yellow !important;
+}
 .item-5v3 {
   grid-area: e;
   height: 100%;
@@ -284,40 +249,81 @@
   width: 100%;
   background-color: red !important;
 }
-.item-4v3 {
-  grid-area: d;
-  height: 100%;
+
+/* Example 8 */
+.grid1 {
+  display: grid;
+  grid-gap: 30px;
+  /* mỗi img min 200px, max 1fr, auto-fill là mỗi element min 200px VD: full màn hình sẽ hiện được 6 element, mà mình chỉ có 4 element
+  thì khoảng trống 2 element còn lại là trống, còn nếu mình dùng auto-fit thì vì min là 200px thì nghĩa là từ 200px trở lên nên nó sẽ
+  dãn kích thước element ra hay nói cách khác là tăng width element lên sao cho 4 element hiển thị đủ full width luôn -> ưu tiên dùng auto-fit
+  design width bao nhiêu thì thay thế width đó cho vị trí 200px
+  */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.grid1 img {
+  object-fit: contain;
   width: 100%;
-  background-color: yellow !important;
+  height: 100%;
+}
+.grid2 {
+  display: grid;
+  border: 1px solid red;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.grid2 img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 1023px) {
+  .grid1 {
+    grid-template-columns: unset;
+    grid-auto-flow: column;
+    grid-auto-columns: 80%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    padding: 25px;
+    scroll-padding: 25px;
+  }
+  .grid1_container {
+    /* start or end or center */
+    scroll-snap-align: start;
+  }
+}
+
+/* Example 9 */
+.parent_test {
+  grid-gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
 }
 .item_test {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   border: 1px solid red;
-  justify-content: center;
-  flex-direction: column;
 }
 .item_test_image {
   width: 100%;
-  object-fit: contain;
   height: 200px;
+  object-fit: contain;
   flex-shrink: 0;
 }
 .item_test_content {
   padding: 25px;
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   border: 1px solid red;
   font-weight: 300;
   flex: 1;
 }
-.parent_test {
-  gap: 10px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr 1fr;
-}
+
+/* Example 10 */
 .button {
   display: flex;
   margin: 1rem 0;
@@ -329,7 +335,15 @@ input {
   flex-shrink: 1;
   width: 1000px;
 }
-button {
+.item span {
+  background-color: yellow;
+  flex: 1;
+}
+.item:last-child {
+  background-color: green;
+}
+.parent {
+  padding: 10px;
 }
 .form {
   margin-bottom: 1rem;

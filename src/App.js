@@ -3,22 +3,29 @@ function App() {
   return (
     <>
       <div className="parent">
+        {/* Example 1 */}
         <div className="flex_grow">
           <div>123</div>
           <div>456</div>
           <div>789</div>
         </div>
+
+        {/* Example 2 */}
         <div className="flex_grow flex_grow_v2">
           <div>123</div>
           <div>456</div>
           <div>789</div>
         </div>
+
+        {/* Example 3 */}
         <div className="cards">
           <div className="card">123</div>
           <div className="card">456</div>
           <div className="card">789</div>
           <div className="card">1122</div>
         </div>
+
+        {/* Example 4 */}
         <div className="cards_v2">
           <div className="card_v2">
             <img
@@ -100,6 +107,7 @@ function App() {
                   qeqweqwe q eqeqwe qwe qwklejqwkleqjw eqwklejqweqkw eqweqwewe
                   qeqweqwe q eqeqwe qwe qwklejqwkleqjw eqwklejqweqkw eqweqwewe
                   qeqweqwe q eqeqwe qwe qwklejqwkleqjw eqwklejqweqkw eqweqwewe
+                  qeqweqwe q eqeqwe qwe qwklejqwkleqjw eqwklejqweqkw eqweqwewe
                 </h3>
                 <div className="content_top_img">
                   <img
@@ -130,6 +138,8 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* Example 5 */}
       <div className="container">
         <div className="item-1 itemv">Item 1</div>
         <div className="item-2 itemv">
@@ -140,6 +150,8 @@ function App() {
         <div className="item-4 itemv">Item 4</div>
         <div className="item-5 itemv">Item 5</div>
       </div>
+
+      {/* Example 6 */}
       <div className="containerv2">
         <div className="item-1v2 itemvv2">header</div>
         <div className="item-2v2 itemvv2">sidebar</div>
@@ -147,6 +159,8 @@ function App() {
         <div className="item-4v2 itemvv2">comment</div>
         <div className="item-5v2 itemvv2">footer</div>
       </div>
+
+      {/* Example 7 */}
       <div className="containerv3" style={{ marginTop: "100px" }}>
         <div className="item-1v3 itemvv2">header</div>
         <div className="item-2v3 itemvv2">sidebar</div>
@@ -155,6 +169,8 @@ function App() {
         <div className="item-5v3 itemvv2">footer</div>
         <div className="item-6v3 itemvv2">spread</div>
       </div>
+
+      {/* Example 8 */}
       <div className="grid1">
         <div className="grid1_container">
           <img
@@ -181,6 +197,35 @@ function App() {
           />
         </div>
       </div>
+      <br />
+      <div className="grid2">
+        <div className="grid2_container">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+            alt=""
+          />
+        </div>
+        <div className="grid2_container">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+            alt=""
+          />
+        </div>
+        <div className="grid2_container">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+            alt=""
+          />
+        </div>
+        <div className="grid2_container">
+          <img
+            src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
+            alt=""
+          />
+        </div>
+      </div>
+
+      {/* Example 9 */}
       <div className="parent_test">
         <div className="item_test">
           <img
@@ -238,6 +283,8 @@ function App() {
           </div>
         </div>
       </div>
+
+      {/* Example 10 */}
       <div className="button">
         <input />
         <button>btn</button>
